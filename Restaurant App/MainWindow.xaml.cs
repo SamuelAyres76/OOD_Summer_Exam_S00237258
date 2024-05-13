@@ -15,14 +15,28 @@ using System.Windows.Shapes;
 
 namespace Restaurant_App
 {
-    /// <summary>
-    /// Interaction logic for MainWindow.xaml
-    /// </summary>
     public partial class MainWindow : Window
     {
+        private CustomerClass db;
+
         public MainWindow()
         {
             InitializeComponent();
+            db = new CustomerClass();
+            LoadCustomers();
+        }
+
+        private void LoadCustomers()
+        {
+            try
+            {
+                var Bookings = db.Bookings.ToList();
+                listBoxMovies.ItemsSource = Bookings;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error Displaying Restauarant Bookings: " + ex.Message);
+            }
         }
     }
 }
