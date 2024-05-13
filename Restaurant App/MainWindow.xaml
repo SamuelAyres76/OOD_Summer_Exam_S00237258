@@ -19,16 +19,13 @@
             
             <DatePicker x:Name="DatePicker" SelectedDateChanged="DateChanged"/>
             
-            <ListBox x:Name="listBoxMovies" SelectionChanged="ListBoxMovies_SelectionChanged" Height="280">
+            <ListBox x:Name="listBoxBookings" SelectionChanged="ListBoxBookings_SelectionChanged" Height="280">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal" Margin="5">
-                            
-                            <Image Source="{Binding ImageName}" Width="100" Height="100" />
-                            
                             <StackPanel Orientation="Vertical" Margin="5">
-                                <TextBlock Text="{Binding Title}" FontWeight="Bold" FontSize="16"/>
-                                <TextBlock Text="{Binding Cast}" FontStyle="Italic" FontSize="14"/>
+                                <TextBlock Text="{Binding Name}" FontWeight="Bold" FontSize="16"/>
+                                <TextBlock Text="{Binding ContactNumber}" FontStyle="Italic" FontSize="14"/>
                             </StackPanel>
                         </StackPanel>
                     </DataTemplate>
@@ -69,7 +66,7 @@
 
             <StackPanel Orientation="Horizontal" Margin="0,15,0,0">
                 <!-- Button to book seats -->
-                <Button Content="Customer Search" Click="ButtonBookSeats_Click"/>
+                <Button Content="Customer Search" Click="CustomerSearch_Click"/>
             </StackPanel>
 
         </StackPanel>
