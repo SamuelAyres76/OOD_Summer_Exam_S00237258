@@ -21,14 +21,18 @@ namespace Restaurant_App
             InitializeComponent();
         }
 
+        // Update List with entries with similar names
         private void MatchingCustomers_SelectionChanged(object sender, RoutedEventArgs e)
         {
 
         }
 
+        // Create the booking by taking in the data from the textboxes
         private void CreateBooking_Click(object sender, RoutedEventArgs e)
         {
-
+            // Get the customer name and contact number from the textboxes
+            // string customerName = CustomerNameTextBox.Text;
+            // string contactNumber = ContactNumberTextBox.Text;
         }
 
     }
