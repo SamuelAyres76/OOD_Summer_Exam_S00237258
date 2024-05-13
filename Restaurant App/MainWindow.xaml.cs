@@ -48,29 +48,28 @@ namespace Restaurant_App
             }
         }
 
-        // Handle selection changed for booking details
+        // Handle the selection changed for booking details.
         private void ListBoxBookings_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            // Your logic for handling selection changes goes here
-            // For example, display additional details about the selected booking
+
         }
 
-        // Handle date change event
+        // Handling any date change event
         private void DateChanged(object sender, SelectionChangedEventArgs e)
         {
-            LoadCustomers(); // Reload bookings when date changes
+            // Reload bookings when the date changes
+            LoadCustomers();
         }
 
-        // Handle button click for booking seats
+        // Book Seats Button
         private void ButtonBookSeats_Click(object sender, RoutedEventArgs e)
         {
-            // Your logic for booking seats or searching for customers goes here
+
         }
 
         private void CustomerSearch_Click(object sender, RoutedEventArgs e)
         {
-            // Navigate to CustomerSearchResults.xaml
-            
+            // Go to the other page.
         }
     }
 }

@@ -68,7 +68,6 @@
                 <!-- Button to book seats -->
                 <Button Content="Customer Search" Click="CustomerSearch_Click"/>
             </StackPanel>
-
         </StackPanel>
     </Grid>
 </Window>

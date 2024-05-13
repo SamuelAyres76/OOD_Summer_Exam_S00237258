@@ -14,14 +14,22 @@ using System.Windows.Shapes;
 
 namespace Restaurant_App
 {
-    /// <summary>
-    /// Interaction logic for CustomerSearchResults.xaml
-    /// </summary>
     public partial class CustomerSearchResults : Window
     {
         public CustomerSearchResults()
         {
             InitializeComponent();
         }
+
+        private void MatchingCustomers_SelectionChanged(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CreateBooking_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
     }
 }

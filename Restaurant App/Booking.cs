@@ -35,9 +35,7 @@ namespace Restaurant_App
     public class CustomerClass : DbContext
     {
         public CustomerClass(string dbName) : base(dbName) { }
-
         public CustomerClass() : this("OODExam_SamuelAyres") { }
-
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Booking> Bookings { get; set; }
     }
